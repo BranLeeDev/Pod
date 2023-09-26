@@ -1,15 +1,16 @@
 {
   "author": "BranLeeDev",
-  "description": "",
+  "description": "Pod request access landing page with custom form validation",
   "devDependencies": {
     "prettier": "^3.0.3"
   },
-  "keywords": [],
+  "keywords": [
+    "Pod",
+    "Pod Sass",
+    "Pod Sass Frontend Mentor"
+  ],
   "license": "MIT",
   "main": "index.html",
   "name": "pod",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "version": "1.0.0"
 }
