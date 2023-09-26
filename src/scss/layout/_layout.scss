@@ -10,7 +10,9 @@ body {
   display: flex;
   flex-direction: column;
   gap: 3.5625rem;
+  min-width: 20rem;
   width: 100%;
+  min-height: 20rem;
   height: 100vh;
   padding-top: 4rem;
   padding-bottom: 6rem;
@@ -20,10 +22,21 @@ body {
       variables.$linear-background-layout
     ),
     url("https://res.cloudinary.com/dbbixakcl/image/upload/f_auto,q_auto/v1/FrontendMentor/Pod/swmpsziwplsj80x7xhws");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
   .main {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media screen and (width >= 360px) {
+  .content-layout {
+    gap: 3.75rem;
+    padding-top: 4.1875rem;
+    padding-bottom: 6.1875rem;
   }
 }

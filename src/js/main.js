@@ -38,7 +38,7 @@ window.addEventListener("load", () => {
     }
 
     if (result.includes(index)) {
-      message.textContent = "Oops! Two or more '@' symbols are not allowed";
+      message.textContent = "Oops! Two or more '@' are not allowed";
       return;
     }
 

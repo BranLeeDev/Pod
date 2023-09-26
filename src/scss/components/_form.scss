@@ -41,3 +41,18 @@
     background-color: variables.$background-input-submit;
   }
 }
+
+@media screen and (width >= 360px) {
+  .section__form {
+    gap: 1.5rem;
+    .form__input {
+      font-size: typography.$size-input + 0.125rem;
+      padding: 1rem 2rem;
+      border-radius: 2rem;
+    }
+    .form__message-errors {
+      top: 3.2rem;
+      font-size: typography.$size-input;
+    }
+  }
+}

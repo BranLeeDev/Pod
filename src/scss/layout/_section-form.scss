@@ -27,3 +27,17 @@
   @import "components/carousel";
   @import "components/form";
 }
+
+@media screen and (width >= 360px) {
+  .main__section--form {
+    gap: 1.25rem;
+    .section__title {
+      font-size: typography.$title-size-mobile + 0.125rem;
+      line-height: typography.$title-size-mobile + 0.875rem;
+    }
+    .section__paragraph {
+      font-size: typography.$text-size-mobile + 0.125rem;
+      line-height: typography.$text-size-mobile + 0.75rem;
+    }
+  }
+}
