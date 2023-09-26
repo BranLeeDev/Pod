@@ -29,14 +29,14 @@
   }
 }
 
-@media screen and (width >= 360px) {
+@media screen and (width >= variables.$breakpoint-mobile) {
   .section__container-list {
     height: 3rem;
     margin-top: 1.1875rem;
   }
 }
 
-@media screen and (width >= 360px) and (orientation: landscape) {
+@media screen and (width >= variables.$breakpoint-landscape) and (orientation: landscape) {
   .section__container-list {
     width: 60%;
   }

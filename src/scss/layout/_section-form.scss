@@ -28,7 +28,7 @@
   @import "components/form";
 }
 
-@media screen and (width >= 360px) {
+@media screen and (width >= variables.$breakpoint-mobile) {
   .main__section--form {
     gap: 1.25rem;
     .section__title {
@@ -42,7 +42,7 @@
   }
 }
 
-@media screen and (width >= 360px) and (orientation: landscape) {
+@media screen and (width >= variables.$breakpoint-landscape) and (orientation: landscape) {
   .main__section--form {
     .section__title {
       max-width: 31.25rem;
