@@ -1,0 +1,18 @@
+@use "utilities/variables" as variables;
+
+.header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  .header__title {
+    width: max-content;
+    .title__content {
+      display: none;
+    }
+    .header__logo-img {
+      width: variables.$logo-width;
+      height: variables.$logo-height;
+      object-fit: contain;
+    }
+  }
+}

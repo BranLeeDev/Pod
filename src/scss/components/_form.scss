@@ -1,0 +1,36 @@
+@use "utilities/variables" as variables;
+@use "base/typography" as typography;
+
+.section__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  margin-top: 2rem;
+  .form__input {
+    font-size: typography.$size-input;
+    font-weight: typography.$weight-input;
+    width: 100%;
+    padding: 0.5625rem 2rem;
+    border-radius: 1.75rem;
+  }
+  .form__input--text {
+    background-color: variables.$background-text-input;
+    color: variables.$secondary-color;
+  }
+
+  .form__input--text:focus {
+    filter: brightness(1.2);
+  }
+
+  .form__input--text::placeholder {
+    font-size: typography.$size-input;
+    font-weight: typography.$weight-input;
+    color: variables.$secondary-color;
+    opacity: 0.5;
+  }
+
+  .form__input--submit {
+    background-color: variables.$background-input-submit;
+  }
+}

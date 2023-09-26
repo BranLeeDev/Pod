@@ -11,3 +11,12 @@ ul {
 a {
   text-decoration: none;
 }
+
+input {
+  background: none;
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}

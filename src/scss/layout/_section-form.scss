@@ -1,0 +1,29 @@
+@use "utilities/variables" as variables;
+@use "base/typography" as typography;
+
+.main__section--form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 90%;
+  .section__title {
+    font-size: typography.$title-size-mobile;
+    font-weight: typography.$chivo-light;
+    line-height: typography.$title-size-mobile + 0.75rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: variables.$primary-color;
+    .title__color {
+      color: variables.$secondary-color;
+    }
+  }
+  .section__paragraph {
+    font-size: typography.$text-size-mobile;
+    line-height: typography.$text-size-mobile + 0.625rem;
+    text-align: center;
+    color: variables.$paragraph-color;
+  }
+  @import "components/carousel";
+  @import "components/form";
+}
