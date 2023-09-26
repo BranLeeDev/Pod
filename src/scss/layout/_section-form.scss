@@ -41,3 +41,14 @@
     }
   }
 }
+
+@media screen and (width >= 360px) and (orientation: landscape) {
+  .main__section--form {
+    .section__title {
+      max-width: 31.25rem;
+    }
+    .section__paragraph {
+      max-width: 37.5rem;
+    }
+  }
+}

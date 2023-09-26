@@ -56,3 +56,17 @@
     }
   }
 }
+
+@media screen and (width >= 360px) and (orientation: landscape) {
+  .section__form {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 43.75rem;
+    .form__input--text {
+      width: 100%;
+    }
+    .form__input--submit {
+      width: 12.5rem;
+    }
+  }
+}

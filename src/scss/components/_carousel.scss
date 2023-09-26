@@ -35,3 +35,9 @@
     margin-top: 1.1875rem;
   }
 }
+
+@media screen and (width >= 360px) and (orientation: landscape) {
+  .section__container-list {
+    width: 60%;
+  }
+}
