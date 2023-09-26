@@ -1,0 +1,15 @@
+{
+  "author": "BranLeeDev",
+  "description": "",
+  "devDependencies": {
+    "prettier": "^3.0.3"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "main": "index.html",
+  "name": "pod",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
+}
