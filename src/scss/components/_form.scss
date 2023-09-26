@@ -2,6 +2,7 @@
 @use "base/typography" as typography;
 
 .section__form {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -18,16 +19,22 @@
     background-color: variables.$background-text-input;
     color: variables.$secondary-color;
   }
-
   .form__input--text:focus {
     filter: brightness(1.2);
   }
-
   .form__input--text::placeholder {
     font-size: typography.$size-input;
     font-weight: typography.$weight-input;
     color: variables.$secondary-color;
     opacity: 0.5;
+  }
+  .form__message-errors {
+    position: absolute;
+    top: 2.15rem;
+    left: 2rem;
+    font-size: typography.$size-input - 0.125rem;
+    font-weight: typography.$weight-input;
+    color: variables.$color-errors-submit;
   }
 
   .form__input--submit {
