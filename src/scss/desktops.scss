@@ -1,0 +1,66 @@
+@use "base/typography" as typography;
+@import "tablets.scss";
+
+.content-layout {
+  overflow: hidden;
+}
+
+.header {
+  justify-content: center;
+  padding: 0;
+  .header__title {
+    width: 90%;
+  }
+}
+
+.main__section--form {
+  .section__container-data {
+    max-width: 60rem;
+    .section__title {
+      max-width: 41.25rem;
+      font-size: typography.$title-size-desktop;
+      line-height: typography.$title-size-desktop + 0.625rem;
+    }
+    .section__paragraph {
+      font-size: typography.$text-size-desktop;
+      line-height: typography.$text-size-desktop + 0.625rem;
+    }
+    .section__form {
+      max-width: 45rem;
+      .form__input {
+        font-size: typography.$size-input-desktop;
+      }
+      .form__input--text::placeholder {
+        font-size: typography.$size-input-desktop;
+      }
+
+      .form__message-errors {
+        top: 5.5rem;
+        font-size: typography.$size-input-desktop - 0.125rem;
+      }
+
+      .form__input--submit {
+        padding: 1.5rem 3rem;
+        width: 17rem;
+      }
+      .form__input--submit:hover {
+        filter: brightness(1.2);
+        cursor: pointer;
+      }
+    }
+  }
+  .section__figure {
+    top: -7.7rem;
+    right: -12%;
+  }
+  .section__container-list {
+    height: 7rem;
+  }
+}
+
+.main::after {
+  height: 9.375rem;
+  bottom: 12rem;
+  left: auto;
+  right: 0;
+}
