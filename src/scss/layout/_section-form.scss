@@ -3,52 +3,64 @@
 
 .main__section--form {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
   width: 90%;
-  .section__title {
-    font-size: typography.$title-size-mobile;
-    font-weight: typography.$chivo-light;
-    line-height: typography.$title-size-mobile + 0.75rem;
-    text-transform: uppercase;
-    text-align: center;
-    color: variables.$primary-color;
-    .title__color {
-      color: variables.$secondary-color;
+  .section__container-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    .section__title {
+      font-size: typography.$title-size-mobile;
+      font-weight: typography.$chivo-light;
+      line-height: typography.$title-size-mobile + 0.75rem;
+      text-transform: uppercase;
+      text-align: center;
+      color: variables.$primary-color;
+      .title__color {
+        color: variables.$secondary-color;
+      }
     }
+    .section__paragraph {
+      font-size: typography.$text-size-mobile;
+      line-height: typography.$text-size-mobile + 0.625rem;
+      text-align: center;
+      color: variables.$paragraph-color;
+    }
+    @import "components/carousel";
+    @import "components/form";
   }
-  .section__paragraph {
-    font-size: typography.$text-size-mobile;
-    line-height: typography.$text-size-mobile + 0.625rem;
-    text-align: center;
-    color: variables.$paragraph-color;
+
+  .section__figure {
+    display: none;
   }
-  @import "components/carousel";
-  @import "components/form";
 }
 
 @media screen and (width >= variables.$breakpoint-mobile) {
   .main__section--form {
-    gap: 1.25rem;
-    .section__title {
-      font-size: typography.$title-size-mobile + 0.125rem;
-      line-height: typography.$title-size-mobile + 0.875rem;
-    }
-    .section__paragraph {
-      font-size: typography.$text-size-mobile + 0.125rem;
-      line-height: typography.$text-size-mobile + 0.75rem;
+    .section__container-data {
+      gap: 1.25rem;
+      .section__title {
+        font-size: typography.$title-size-mobile + 0.125rem;
+        line-height: typography.$title-size-mobile + 0.875rem;
+      }
+      .section__paragraph {
+        font-size: typography.$text-size-mobile + 0.125rem;
+        line-height: typography.$text-size-mobile + 0.75rem;
+      }
     }
   }
 }
 
 @media screen and (width >= variables.$breakpoint-landscape) and (orientation: landscape) {
   .main__section--form {
-    .section__title {
-      max-width: 31.25rem;
-    }
-    .section__paragraph {
-      max-width: 37.5rem;
+    .section__container-data {
+      .section__title {
+        max-width: 31.25rem;
+      }
+      .section__paragraph {
+        max-width: 37.5rem;
+      }
     }
   }
 }

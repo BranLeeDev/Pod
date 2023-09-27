@@ -1,0 +1,92 @@
+@use "utilities/variables" as variables;
+@use "base/typography" as typography;
+
+.content-layout {
+  padding-top: 3.125rem;
+  padding-bottom: 16.0625rem;
+  background-color: variables.$tertiary-color;
+  background-image: none;
+}
+
+.header {
+  justify-content: flex-start;
+  padding: 0rem 2.4375rem;
+}
+
+.main::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0rem;
+  left: 2rem;
+  width: 16.875rem;
+  height: 9.6875rem;
+  background-image: radial-gradient(circle, variables.$primary-color 20%, transparent 20%);
+  background-size: 2.1875rem 2.1875rem;
+}
+
+.main__section--form {
+  position: relative;
+  .section__container-data {
+    position: relative;
+    z-index: 10;
+    display: grid;
+    grid-template-rows: repeat(4, minmax(min-content, max-content));
+    gap: 1.9375rem;
+    max-width: 51.8125rem;
+    padding-top: 5.8125rem;
+    padding-right: 5rem;
+    padding-bottom: 2rem;
+    background-color: variables.$tertiary-color;
+    .section__title {
+      grid-row: 1 / 2;
+      max-width: 38.25rem;
+      font-size: typography.$title-size-tablet;
+      line-height: typography.$title-size-tablet + 0.5rem;
+      text-align: start;
+    }
+    .section__paragraph {
+      grid-row: 2 / 3;
+      font-size: typography.$text-size-tablet;
+      line-height: typography.$text-size-tablet + 0.625rem;
+      text-align: start;
+    }
+    .section__container-list {
+      grid-row: 4 / 5;
+      max-width: 26rem;
+      height: 4rem;
+    }
+    .section__form {
+      grid-row: 3 / 4;
+      flex-direction: row;
+      max-width: 37rem;
+      padding: 0.3125rem;
+      border-radius: 2.0625rem;
+      background-color: variables.$background-text-input;
+      .form__input {
+        font-size: typography.$size-input-tablet;
+      }
+      .form__input--text::placeholder {
+        font-size: typography.$size-input-tablet;
+      }
+      .form__input--text:focus {
+        background-color: transparent;
+      }
+      .form__input--submit {
+        width: 13rem;
+      }
+    }
+    .section__form:focus-within {
+      filter: brightness(1.2);
+    }
+  }
+
+  .section__figure {
+    position: absolute;
+    z-index: 0;
+    top: -11rem;
+    right: -10%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}

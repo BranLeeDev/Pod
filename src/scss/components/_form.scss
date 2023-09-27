@@ -9,7 +9,7 @@
   width: 100%;
   margin-top: 2rem;
   .form__input {
-    font-size: typography.$size-input;
+    font-size: typography.$size-input-mobile;
     font-weight: typography.$weight-input;
     width: 100%;
     padding: 0.5625rem 2rem;
@@ -23,7 +23,7 @@
     filter: brightness(1.2);
   }
   .form__input--text::placeholder {
-    font-size: typography.$size-input;
+    font-size: typography.$size-input-mobile;
     font-weight: typography.$weight-input;
     color: variables.$secondary-color;
     opacity: 0.5;
@@ -32,7 +32,7 @@
     position: absolute;
     top: 2.15rem;
     left: 2rem;
-    font-size: typography.$size-input - 0.125rem;
+    font-size: typography.$size-input-mobile - 0.125rem;
     font-weight: typography.$weight-input;
     color: variables.$color-errors-submit;
   }
@@ -46,13 +46,13 @@
   .section__form {
     gap: 1.5rem;
     .form__input {
-      font-size: typography.$size-input + 0.125rem;
+      font-size: typography.$size-input-mobile + 0.125rem;
       padding: 1rem 2rem;
       border-radius: 2rem;
     }
     .form__message-errors {
       top: 3.2rem;
-      font-size: typography.$size-input;
+      font-size: typography.$size-input-mobile;
     }
   }
 }
