@@ -72,6 +72,9 @@
       .form__input--text:focus {
         background-color: transparent;
       }
+      .form__message-errors {
+        top: 4.2rem;
+      }
       .form__input--submit {
         width: 13rem;
       }
@@ -107,6 +110,9 @@
           background-color: variables.$background-text-input;
           filter: brightness(1.2);
         }
+        .form__message-errors {
+          top: 3.9rem;
+        }
       }
       .section__form:focus-within {
         filter: none;
@@ -123,6 +129,13 @@
     margin-top: 1rem;
   }
   .main__section--form {
+    .section__container-data {
+      .section__form {
+        .form__message-errors {
+          top: 3.8rem;
+        }
+      }
+    }
     .section__figure {
       top: -15rem;
     }
