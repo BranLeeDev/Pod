@@ -90,3 +90,41 @@
     justify-content: flex-end;
   }
 }
+
+@media screen and (width >= 810px) and (height >= 1000px) {
+  .content-layout {
+    gap: 4.75rem;
+  }
+  .main__section--form {
+    .section__figure {
+      top: -12rem;
+    }
+    .section__container-data {
+      .section__form {
+        flex-direction: column;
+        background: none;
+        .form__input--text:focus {
+          background-color: variables.$background-text-input;
+          filter: brightness(1.2);
+        }
+      }
+      .section__form:focus-within {
+        filter: none;
+      }
+    }
+  }
+}
+
+@media screen and (height >= 1388px) {
+  .content-layout {
+    gap: 6.75rem;
+  }
+  .main {
+    margin-top: 1rem;
+  }
+  .main__section--form {
+    .section__figure {
+      top: -15rem;
+    }
+  }
+}
